@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Alugue salas e lojas no Ipatinga Tower, o centro de negócios e inovação de Ipatinga."
+      content="Alugue salas e lojas no Ipatinga Tower, o
+    centro de negócios e inovação de Ipatinga."
     />
     <meta
       name="keywords"
       content="aluguel, salas comerciais, lojas, Ipatinga Tower"
     />
     <meta name="author" content="Ipatinga Tower" />
-    <!-- ADICIONAR ÍCONE DA PÁGINA -->
+    <link rel="icon" href="src/IPATINGA TOWER.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
@@ -32,53 +33,106 @@
       referrerpolicy="no-referrer"
     ></script>
     <title>Ipatinga Tower</title>
+
+    <style>
+      #nav_logo {
+        max-width: 80px;
+        height: auto;
+      }
+
+      #banner img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #banner {
+        max-height: 500px;
+        overflow: hidden;
+      }
+
+      footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      footer .contact-buttons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #fff;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      footer .contact-buttons a:hover {
+        color: #4caf50; /* Cor de destaque para hover */
+      }
+
+      footer p {
+        margin: 10px 0 0;
+        font-size: 0.9rem;
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <!--ADICIONAR LOGO DO IPATINGA TOWER-->
+        <img
+          src="src/IPATINGA TOWER.png"
+          alt="Ipatinga Tower Logo"
+          id="nav_logo"
+        />
 
         <ul id="nav_list">
           <li class="nav-item active">
-            <a href="#home">Sobre Nós</a>
+            <a href="#inicio">Página Inicial</a>
           </li>
           <li class="nav-item">
-            <a href="#local">Local</a>
+            <a href="#local">Localização</a>
           </li>
           <li class="nav-item">
-            <a href="#present">Produtos</a>
+            <a href="#imoveis">Imóveis</a>
+          </li>
+          <li class="nav-item">
+            <a href="#alugar"> Alugar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#comprar">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato">Contato</a>
           </li>
         </ul>
 
-        <button class="btn-default">
-          <div class="soccial-media-buttons">
-            <a
-              href="https://api.whatsapp.com/send?phone=5531987898689&text=Ol%C3%A1%20estou%20interessado%20em%20alugar%20uma%20sala%20ou%20loja%20no%20Ipatinga%20Tower!"
-            >
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </button>
-
-        <button id="mobile_btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
       </nav>
 
       <div id="mobile_menu">
         <ul id="mobile_nav_list">
           <li class="nav-item">
-            <a href="#home">Sobre</a>
+            <a href="#home">Página Inicial</a>
           </li>
           <li class="nav-item">
-            <a href="#local">Local</a>
+            <a href="#local">Localização</a>
           </li>
           <li class="nav-item">
-            <a href="#present">Presentes</a>
+            <a href="#imoveis">Imóveis</a>
+          </li>
+          <li class="nav-item">
+            <a href="#alugar"> Alugar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#comprar">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato">Contato</a>
           </li>
         </ul>
 
-        <button class="btn-default">Peça aqui</button>
+        <a class="btn-default" href="#contato">Fale Conosco</a>
       </div>
     </header>
 
@@ -92,7 +146,7 @@
           </h1>
 
           <p class="description">
-            🏙️ Bem-vindo ao Ipatinga Tower, o centro pulsante de inovação e
+            Bem-vindo ao Ipatinga Tower, o centro pulsante de inovação e
             oportunidades de negócios em Ipatinga!
           </p>
 
@@ -101,19 +155,29 @@
           </div>
         </div>
 
-        <div class="soccial-media-buttons">
-          <a
-            href="https://www.instagram.com/ipatingatower/?igsh=MWdrbjk1ejBjZmc1Ng%3D%3D"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-
         <div id="banner">
-          <img src="" alt="" />
+          <img src="src/banner.jpg" alt="Banner do Ipatinga Tower" />
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="contact-buttons">
+        <a
+          href="https://api.whatsapp.com/send?phone=5531987898689&text=Ol%C3%A1%20estou%20interessado%20em%20alugar%20uma%20sala%20ou%20loja%20no%20Ipatinga%20Tower!"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ipatingatower/"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Ipatinga Tower. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="src/javascript/script.js"></script>
   </body>
