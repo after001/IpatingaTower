@@ -62,13 +62,35 @@
       footer .contact-buttons a {
         display: inline-block;
         margin: 0 10px;
-        color: #fff;
         font-size: 1.5rem;
         transition: color 0.3s ease;
       }
 
-      footer .contact-buttons a:hover {
-        color: #4caf50; /* Cor de destaque para hover */
+      /* Cor padrão para os ícones */
+      footer .contact-buttons a:nth-child(1) i {
+        color: #25d366; /* Verde do WhatsApp */
+      }
+
+      footer .contact-buttons a:nth-child(2) i {
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        ); /* Gradiente do Instagram */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Efeito ao passar o mouse */
+      footer .contact-buttons a:hover:nth-child(1) i {
+        color: #128c7e;
+      }
+
+      footer .contact-buttons a:hover:nth-child(2) i {
+        filter: brightness(1.2);
       }
 
       footer p {
@@ -140,7 +162,7 @@
       <section id="home">
         <div class="shape"></div>
         <div id="cta">
-          <h1 class="tittle">
+          <h1 class="title">
             Sobre
             <span>Ipatinga Tower</span>
           </h1>
